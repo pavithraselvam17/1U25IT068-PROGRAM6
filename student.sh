@@ -1,19 +1,23 @@
-Creating content with New
+#!/bin/bash
 
-file # cat newfile.txt
+# Creating content with New file
+echo "This is a new file" > newfile.txt
+echo "This is also a text file" >> newfile.txt
 
-Display the content
+# Display the content
+cat newfile.txt
 
-#cat filename.txt
+# Create another file
+echo "This is a file two" > file2.txt
 
-Concatenate Multiple Files
+# Concatenate Multiple Files
+cat newfile.txt file2.txt
 
-# cat filel.txt file2.txt
+# Append the text into existing file
+cat file2.txt >> newfile.txt
 
-Appended the text into text file:
+# Display the appended file
+cat newfile.txt
 
-#cat file1.txt >> existingfile.txt
-
-Numbering Lines
-
-# cat -n filename.txt
+# Numbering Lines
+cat -n newfile.txt
